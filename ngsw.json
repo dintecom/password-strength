@@ -27,6 +27,9 @@
         "/assets/favicon-16x16.png",
         "/assets/favicon-32x32.png",
         "/assets/favicon.ico",
+        "/assets/i18n/de.json",
+        "/assets/i18n/en.json",
+        "/assets/i18n/fr.json",
         "/assets/icons/github.svg",
         "/assets/images/icons/icon-128x128.png",
         "/assets/images/icons/icon-144x144.png",
@@ -129,6 +132,9 @@
         "/assets/md/examples/e2.md",
         "/assets/md/examples/e3.md",
         "/assets/md/examples/e4.md",
+        "/assets/md/examples/info/e1.md",
+        "/assets/md/examples/info/e2.md",
+        "/assets/md/examples/info/e3.md",
         "/assets/mstile-150x150.png",
         "/assets/safari-pinned-tab.svg",
         "/assets/site.webmanifest",
@@ -160,6 +166,9 @@
     "/assets/favicon-16x16.png": "d4171eeb3ee6d6642a261050e4013f4376e06153",
     "/assets/favicon-32x32.png": "73968f8647213dca9d725e364a3f685ca75777e2",
     "/assets/favicon.ico": "2933e80f729bfab58a6e8116da2d8e82392560e4",
+    "/assets/i18n/de.json": "1f39979ff50f729059242ba2694aa43ba73fb606",
+    "/assets/i18n/en.json": "c334ced44e2a17e305a77a0f1bfed5a4c200c1a6",
+    "/assets/i18n/fr.json": "05c063794fe71333d84423164273a6e33c5a37ec",
     "/assets/icons/github.svg": "ee58bd52af4b2c26ed6b172de6e10d748a7d9f66",
     "/assets/images/icons/icon-128x128.png": "b9cbcee329c974ee1a41d501ad62d8841e2df45a",
     "/assets/images/icons/icon-144x144.png": "cee6f46dda413c5e3f5741f1564e9f4de004873b",
@@ -262,6 +271,9 @@
     "/assets/md/examples/e2.md": "4a2af31b550acbdf2197bdc98b2f442802d1db42",
     "/assets/md/examples/e3.md": "e3a357822fb9181b954277ac61b275d724c99295",
     "/assets/md/examples/e4.md": "e8addae8d31193406549a626aee28559599c1c0e",
+    "/assets/md/examples/info/e1.md": "2182983eb20c5710fb183799de5aa9348eb86070",
+    "/assets/md/examples/info/e2.md": "cf5f769a567f3e01cd68baaed1273befad12de25",
+    "/assets/md/examples/info/e3.md": "0d94bd37733b2d31c826b0a9c226f0d29f288676",
     "/assets/mstile-150x150.png": "4d94c9949fefae2a9045c6ad637c05310725f7b3",
     "/assets/safari-pinned-tab.svg": "c4cd35602b0e34946f092f0740af2a6d867a6dcd",
     "/assets/site.webmanifest": "b30e95df2ac9c058fb29a0da4000c0871d8807ad",
@@ -278,7 +290,7 @@
     "/assets/tutorials/npm_i_material_cdk.mp4": "3b454f8357a55ff17bbc6d69ba034689a12945e7",
     "/assets/tutorials/npm_i_ngx_material_password_strength.mp4": "c54e78c12b11fde3df2c491d9a610aa2abcffa6a",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "a26bfa0fd16b99fe2a1ddddcf69b17404058278d"
+    "/index.html": "b650fa530d85a89c35052e36a849047fb26ef266"
   },
   "navigationUrls": [
     {
