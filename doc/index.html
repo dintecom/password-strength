@@ -118,6 +118,15 @@ by starring :star: and sharing it :loudspeaker:</p>
    src="https://raw.githubusercontent.com/angular-material-extensions/password-strength/HEAD/assets/v2.1.0/ngx-material-strength-password-info.png">
 </p>
 
+<ul>
+<li><code>&lt;mat-pass-toggle-visibility&gt;</code> used to show/hide the password provided in the input element</li>
+</ul>
+<p align="center">
+  <img alt="@angular-material-extensions/password-strength's info" style="text-align: center;"
+   src="https://raw.githubusercontent.com/angular-material-extensions/password-strength/HEAD/assets/v3.6.0/mat-pass-toggle-visibility.gif">
+</p>
+
+
 <hr>
 <a name="dependencies"/>
 
@@ -181,70 +190,70 @@ export class OtherModule {
 <tbody>
 <tr>
 <td align="left">password</td>
-<td align="center">Input()</td>
+<td align="center"><code>Input()</code></td>
 <td align="center">string</td>
 <td align="center">-</td>
 <td align="left">the password to calculate its strength</td>
 </tr>
 <tr>
 <td align="left">validators</td>
-<td align="center">Input()</td>
+<td align="center"><code>Input()</code></td>
 <td align="center">Criteria[]</td>
 <td align="center">see inside the class ;)</td>
 <td align="left">custom form validator used to validate the password</td>
 </tr>
 <tr>
 <td align="left">externalError</td>
-<td align="center">Input()</td>
+<td align="center"><code>Input()</code></td>
 <td align="center">boolean</td>
-<td align="center">false</td>
+<td align="center"><code>false</code></td>
 <td align="left">used to change the color of the password to warn if an external error occurs</td>
 </tr>
 <tr>
 <td align="left">enableLengthRule</td>
-<td align="center">Input()</td>
+<td align="center"><code>Input()</code></td>
 <td align="center">boolean</td>
 <td align="center">true</td>
 <td align="left">whether to validate the length of the password</td>
 </tr>
 <tr>
 <td align="left">enableLowerCaseLetterRule</td>
-<td align="center">Input()</td>
+<td align="center"><code>Input()</code></td>
 <td align="center">boolean</td>
 <td align="center">true</td>
 <td align="left">whether a lowercase letter is optional</td>
 </tr>
 <tr>
 <td align="left">enableUpperCaseLetterRule</td>
-<td align="center">Input()</td>
+<td align="center"><code>Input()</code></td>
 <td align="center">boolean</td>
 <td align="center">true</td>
 <td align="left">whether a uppercase letter is optional</td>
 </tr>
 <tr>
 <td align="left">enableDigitRule</td>
-<td align="center">Input()</td>
+<td align="center"><code>Input()</code></td>
 <td align="center">boolean</td>
 <td align="center">true</td>
 <td align="left">whether a digit char is optional</td>
 </tr>
 <tr>
 <td align="left">enableSpecialCharRule</td>
-<td align="center">Input()</td>
+<td align="center"><code>Input()</code></td>
 <td align="center">boolean</td>
 <td align="center">true</td>
 <td align="left">whether a special char is optional</td>
 </tr>
 <tr>
 <td align="left">min</td>
-<td align="center">Input()</td>
+<td align="center"><code>Input()</code></td>
 <td align="center">number</td>
 <td align="center">8</td>
 <td align="left">the minimum length of the password</td>
 </tr>
 <tr>
 <td align="left">max</td>
-<td align="center">Input()</td>
+<td align="center"><code>Input()</code></td>
 <td align="center">number</td>
 <td align="center">30</td>
 <td align="left">the maximum length of the password</td>
@@ -272,52 +281,73 @@ export class OtherModule {
 <tbody>
 <tr>
 <td align="left">passwordComponent</td>
-<td align="center">Input()</td>
+<td align="center"><code>Input()</code></td>
 <td align="center">PasswordStrengthComponent</td>
 <td align="center">-</td>
 <td align="left">the password component used in the template in order to display more info related to the provided password</td>
 </tr>
 <tr>
 <td align="left">enableScoreInfo</td>
-<td align="center">Input()</td>
-<td align="center">boolean</td>
-<td align="center">false</td>
+<td align="center"><code>Input()</code></td>
+<td align="center"><code>boolean</code></td>
+<td align="center"><code>false</code></td>
 <td align="left">whether to show the password&#39;s score in %</td>
 </tr>
 <tr>
 <td align="left">lowerCaseCriteriaMsg</td>
-<td align="center">Input()</td>
-<td align="center">string</td>
+<td align="center"><code>Input()</code></td>
+<td align="center"><code>string</code></td>
 <td align="center">contains at least one lower character</td>
 <td align="left">an appropriate msg for the lower case %</td>
 </tr>
 <tr>
 <td align="left">upperCaseCriteriaMsg</td>
-<td align="center">Input()</td>
-<td align="center">string</td>
+<td align="center"><code>Input()</code></td>
+<td align="center"><code>string</code></td>
 <td align="center">contains at least one upper character</td>
 <td align="left">an appropriate msg for the upper case %</td>
 </tr>
 <tr>
 <td align="left">digitsCriteriaMsg</td>
-<td align="center">Input()</td>
-<td align="center">string</td>
+<td align="center"><code>Input()</code></td>
+<td align="center"><code>string</code></td>
 <td align="center">contains at least one digit character</td>
 <td align="left">an appropriate msg for the digit case %</td>
 </tr>
 <tr>
 <td align="left">specialCharsCriteriaMsg</td>
-<td align="center">Input()</td>
-<td align="center">string</td>
+<td align="center"><code>Input()</code></td>
+<td align="center"><code>string</code></td>
 <td align="center">contains at least one special character</td>
 <td align="left">an appropriate msg for the special case %</td>
 </tr>
 <tr>
 <td align="left">minCharsCriteriaMsg</td>
-<td align="center">Input()</td>
-<td align="center">string</td>
+<td align="center"><code>Input()</code></td>
+<td align="center"><code>string</code></td>
 <td align="center">contains at least ${this.passwordComponent.min} characters</td>
 <td align="left">an appropriate msg for the minimum number of chars %</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mat-pass-toggle-visibility-used-to-show-hide-the-password-provided-in-the-input-element"><code>&lt;mat-pass-toggle-visibility&gt;</code> used to show/hide the password provided in the input element</h3>
+<table class="table table-bordered compodoc-table">
+<thead>
+<tr>
+<th align="left">option</th>
+<th align="center">bind</th>
+<th align="center">type</th>
+<th align="center">default</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">isVisible</td>
+<td align="center"><code>Input()</code></td>
+<td align="center"><code>boolean</code></td>
+<td align="center"><code>false</code></td>
+<td align="left">whether the password is visible or hidden</td>
 </tr>
 </tbody>
 </table>
@@ -374,7 +404,25 @@ export class HomeComponent implements OnInit {}</code></pre></div><div><pre clas
    &lt;div&gt;
      &lt;p&gt;Password&#39;s strength = {{passwordComponent.strength}} %100&lt;/p&gt;
    &lt;/div&gt;
-&lt;/div&gt;</code></pre></div><h4 id="client-side-password-s-validation-using-a-built-in-angular-formcontroller">Client Side password&#39;s validation using a built in angular formController</h4>
+&lt;/div&gt;</code></pre></div><h4 id="use-the-toggle-visibility-component">Use the toggle visibility component</h4>
+<ul>
+<li>add the <code>mat-pass-toggle-visibility</code> to your <code>mat-form-field</code></li>
+<li>give it a name to use it in the html file like <code>toggle</code></li>
+<li>set the type of the input to that value emitted from the <code>mat-pass-toggle-visibility</code> component  <code>&lt;input matInput [type]=&quot;toggle.type&quot;/&gt;</code></li>
+</ul>
+<div><pre class="line-numbers"><code class="language-html">&lt;mat-form-field appearance=&quot;outline&quot; style=&quot;width: 100%&quot; [color]=&quot;passwordComponent.color&quot;&gt;
+  &lt;mat-label&gt;Password&lt;/mat-label&gt;
+  &lt;!-- HERE DOWN :D--&gt;
+  &lt;mat-pass-toggle-visibility #toggle matSuffix&gt;&lt;/mat-pass-toggle-visibility&gt;
+  &lt;!-- THERE ABOVE ;)--&gt;
+  &lt;input matInput #password
+         [type]=&quot;toggle.type&quot;
+         required
+         placeholder=&quot;Password&quot;&gt;
+  &lt;mat-hint align=&quot;end&quot; aria-live=&quot;polite&quot;&gt;
+    {{password.value.length}} / 25
+  &lt;/mat-hint&gt;
+&lt;/mat-form-field&gt;</code></pre></div><h4 id="client-side-password-s-validation-using-a-built-in-angular-formcontroller">Client Side password&#39;s validation using a built in angular formController</h4>
 <ol>
 <li>add an input element to your template with an appropriate @angular-material-extensions/password-strength&#39;s component</li>
 <li>hold a reference of the @angular-material-extensions/password-strength&#39;s component by adding <code>passwordComponentWithValidation</code> (or whatever you want) inside the element</li>
