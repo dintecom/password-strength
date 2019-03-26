@@ -303,9 +303,10 @@ export class MatPassToggleVisibilityComponent {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;button (click)&#x3D;&quot;isVisible &#x3D; !isVisible&quot; class&#x3D;&quot;mat-icon-button cdk-focused cdk-mouse-focused&quot; mat-icon-button matRipple
+        <pre class="line-numbers"><code class="language-html">&lt;button (click)&#x3D;&quot;isVisible &#x3D; !isVisible&quot;
+        class&#x3D;&quot;mat-icon-button cdk-focused cdk-mouse-focused&quot; mat-icon-button
         matRippleCentered&#x3D;&quot;true&quot;
-        matSuffix&gt;
+        matRipple&gt;
   &lt;mat-icon&gt;{{isVisible ? &#x27;visibility&#x27; : &#x27;visibility_off&#x27; }}&lt;/mat-icon&gt;
 &lt;/button&gt;
 
@@ -344,7 +345,7 @@ export class MatPassToggleVisibilityComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><button (click)="isVisible = !isVisible" class="mat-icon-button cdk-focused cdk-mouse-focused" mat-icon-button matRipple        matRippleCentered="true"        matSuffix>  <mat-icon>{{isVisible ? \'visibility\' : \'visibility_off\' }}</mat-icon></button></div>'
+        var COMPONENT_TEMPLATE = '<div><button (click)="isVisible = !isVisible"        class="mat-icon-button cdk-focused cdk-mouse-focused" mat-icon-button        matRippleCentered="true"        matRipple>  <mat-icon>{{isVisible ? \'visibility\' : \'visibility_off\' }}</mat-icon></button></div>'
     var COMPONENTS = [{'name': 'MatPassToggleVisibilityComponent', 'selector': 'mat-pass-toggle-visibility'},{'name': 'MatPasswordStrengthComponent', 'selector': 'mat-password-strength'},{'name': 'MatPasswordStrengthInfoComponent', 'selector': 'mat-password-strength-info'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'MatPassToggleVisibilityComponent'};
