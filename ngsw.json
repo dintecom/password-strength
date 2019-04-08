@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1553628842173,
+  "timestamp": 1554719210581,
   "index": "/password-strength/index.html",
   "assetGroups": [
     {
@@ -134,6 +134,7 @@
         "/password-strength/assets/md/examples/e3.md",
         "/password-strength/assets/md/examples/e4.md",
         "/password-strength/assets/md/examples/e5.md",
+        "/password-strength/assets/md/examples/e6.md",
         "/password-strength/assets/md/examples/info/e1.md",
         "/password-strength/assets/md/examples/info/e2.md",
         "/password-strength/assets/md/examples/info/e3.md",
@@ -274,6 +275,7 @@
     "/password-strength/assets/md/examples/e3.md": "e3a357822fb9181b954277ac61b275d724c99295",
     "/password-strength/assets/md/examples/e4.md": "e8addae8d31193406549a626aee28559599c1c0e",
     "/password-strength/assets/md/examples/e5.md": "cec902bd337c989609a498fa14b869a7da4496cd",
+    "/password-strength/assets/md/examples/e6.md": "7061c3d8847b957f127bb2e212598f089726ab67",
     "/password-strength/assets/md/examples/info/e1.md": "2182983eb20c5710fb183799de5aa9348eb86070",
     "/password-strength/assets/md/examples/info/e2.md": "cf5f769a567f3e01cd68baaed1273befad12de25",
     "/password-strength/assets/md/examples/info/e3.md": "0d94bd37733b2d31c826b0a9c226f0d29f288676",
@@ -293,7 +295,7 @@
     "/password-strength/assets/tutorials/npm_i_material_cdk.mp4": "3b454f8357a55ff17bbc6d69ba034689a12945e7",
     "/password-strength/assets/tutorials/npm_i_ngx_material_password_strength.mp4": "c54e78c12b11fde3df2c491d9a610aa2abcffa6a",
     "/password-strength/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/password-strength/index.html": "6b28dc73a22f71f957dbe69ee3361357099da442"
+    "/password-strength/index.html": "79b11be5f2efecd907835d0e3975eba097dc93eb"
   },
   "navigationUrls": [
     {
