@@ -65,13 +65,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/MatPasswordStrengthModule.html" data-type="entity-link">MatPasswordStrengthModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-MatPasswordStrengthModule-44a37946bee80ad4447949beaa6c12a6"' : 'data-target="#xs-components-links-module-MatPasswordStrengthModule-44a37946bee80ad4447949beaa6c12a6"' }>
+                                            'data-target="#components-links-module-MatPasswordStrengthModule-5b0e1cac307241391f1260c2a96909a7"' : 'data-target="#xs-components-links-module-MatPasswordStrengthModule-5b0e1cac307241391f1260c2a96909a7"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-MatPasswordStrengthModule-44a37946bee80ad4447949beaa6c12a6"' :
-                                            'id="xs-components-links-module-MatPasswordStrengthModule-44a37946bee80ad4447949beaa6c12a6"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-MatPasswordStrengthModule-5b0e1cac307241391f1260c2a96909a7"' :
+                                            'id="xs-components-links-module-MatPasswordStrengthModule-5b0e1cac307241391f1260c2a96909a7"' }>
                                             <li class="link">
                                                 <a href="components/MatPassToggleVisibilityComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatPassToggleVisibilityComponent</a>
@@ -89,6 +89,19 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                 </ul>
                 </li>
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#classes-links"' :
+                            'data-target="#xs-classes-links"' }>
+                            <span class="icon ion-ios-paper"></span>
+                            <span>Classes</span>
+                            <span class="icon ion-ios-arrow-down"></span>
+                        </div>
+                        <ul class="links collapse" ${ isNormalMode ? 'id="classes-links"' : 'id="xs-classes-links"' }>
+                            <li class="link">
+                                <a href="classes/MatPasswordStrengthValidator.html" data-type="entity-link">MatPasswordStrengthValidator</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#miscellaneous-links"'
                             : 'data-target="#xs-miscellaneous-links"' }>

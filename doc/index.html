@@ -187,21 +187,20 @@ export class OtherModule {
 <a name="api"/>
 
 <h2 id="api">API</h2>
-<h3 id="mat-password-strength-used-to-calculate-and-display-the-strength-of-a-provided-password"><code>&lt;mat-password-strength&gt;</code> used to calculate and display the strength of a provided password</h3>
+<h3 id="mat-password-strength-used-to-calculate-and-display-the-strength-of-a-provided-password---see-the-demo-examples"><code>&lt;mat-password-strength&gt;</code> used to calculate and display the strength of a provided password - <a href="https://angular-material-extensions.github.io/password-strength/examples">see the demo examples</a></h3>
 <p>| option | bind  |  type  |   default    | description  |
 |:-------------------|:--------:|:------:|:------------:|:-------------------------------------------------------------------------------------------------|<br>| password           | <code>Input()</code>  | string    | - |  the password to calculate its strength
-| validators           | <code>Input()</code>  | Criteria[]    | see inside the class ;) |  custom form validator used to validate the password
 | customValidator           | <code>Input()</code>  | RegExp    | - |  custom regex validator
-| externalError      | <code>Input()</code>  | boolean   | <code>false</code>  | used to change the color of the password to warn if an external error occurs
-| enableLengthRule      | <code>Input()</code>  | boolean   | true | whether to validate the length of the password
-| enableLowerCaseLetterRule      | <code>Input()</code>  | boolean   | true | whether a lowercase letter is optional
-| enableUpperCaseLetterRule      | <code>Input()</code>  | boolean   | true | whether a uppercase letter is optional
-| enableDigitRule      | <code>Input()</code>  | boolean   | true | whether a digit char is optional
-| enableSpecialCharRule      | <code>Input()</code>  | boolean   | true | whether a special char is optional
-| min      | <code>Input()</code>  | number   | 8 | the minimum length of the password
-| max      | <code>Input()</code>  | number   | 30 | the maximum length of the password
-| onStrengthChanged  | Output() | number    | - | emits the strength of the provided password in % e.g: 20%, 40%, 60%, 80% or 100%</p>
-<h3 id="mat-password-strength-info-used-to-display-more-information-about-the-strength-of-a-provided-password"><code>&lt;mat-password-strength-info&gt;</code> used to display more information about the strength of a provided password</h3>
+| externalError      | <code>Input()</code>  | <code>boolean</code>   | <code>false</code>  | used to change the color of the password to warn if an external error occurs
+| enableLengthRule      | <code>Input()</code>  | <code>boolean</code>   | <code>true</code> | whether to validate the length of the password
+| enableLowerCaseLetterRule      | <code>Input()</code>  | <code>boolean</code>   | <code>true</code> | whether a lowercase letter is optional
+| enableUpperCaseLetterRule      | <code>Input()</code>  | <code>boolean</code>   | <code>true</code> | whether a uppercase letter is optional
+| enableDigitRule      | <code>Input()</code>  | <code>boolean</code>   | <code>true</code> | whether a digit char is optional
+| enableSpecialCharRule      | <code>Input()</code>  | <code>boolean</code>   | true | whether a special char is optional
+| min      | <code>Input()</code>  | <code>number</code>   | 8 | the minimum length of the password
+| max      | <code>Input()</code>  | <code>number</code>   | 30 | the maximum length of the password
+| onStrengthChanged  | Output() | <code>number</code>    | - | emits the strength of the provided password in % e.g: 20%, 40%, 60%, 80% or 100%</p>
+<h3 id="mat-password-strength-info-used-to-display-more-information-about-the-strength-of-a-provided-password---see-the-demo-examples"><code>&lt;mat-password-strength-info&gt;</code> used to display more information about the strength of a provided password - <a href="https://angular-material-extensions.github.io/password-strength/examples/mat-password-strength-info">see the demo examples</a></h3>
 <p>| option | bind  |  type  |   default    | description  |
 |:-------------------|:--------:|:------:|:------------:|:-------------------------------------------------------------------------------------------------|<br>| passwordComponent       | <code>Input()</code>  | PasswordStrengthComponent    | - |  the password component used in the template in order to display more info related to the provided password
 | enableScoreInfo         | <code>Input()</code>  | <code>boolean</code>| <code>false</code>  |  whether to show the password&#39;s score in %
@@ -210,7 +209,7 @@ export class OtherModule {
 | digitsCriteriaMsg       | <code>Input()</code>  | <code>string</code> | contains at least one digit character   |  an appropriate msg for the digit case %
 | specialCharsCriteriaMsg | <code>Input()</code>  | <code>string</code> | contains at least one special character |  an appropriate msg for the special case %
 | customCharsCriteriaMsg  | <code>Input()</code>  | <code>string</code>  | contains at least one custom character |  an appropriate msg for the custom validator case %
-| minCharsCriteriaMsg     | <code>Input()</code>  | <code>string</code> | contains at least ${this.passwordComponent.min} characters |  an appropriate msg for the minimum number of chars %</p>
+| minCharsCriteriaMsg     | <code>Input()</code>  | <code>string</code> | contains at least ${this.passwordComponent.min} characters |  an appropriate msg for the minimum <code>number</code> of chars %</p>
 <h3 id="mat-pass-toggle-visibility-used-to-showhide-the-password-provided-in-the-input-element"><code>&lt;mat-pass-toggle-visibility&gt;</code> used to show/hide the password provided in the input element</h3>
 <p>| option | bind  |  type  |   default    | description  |
 |:-------------------|:--------:|:------:|:------------:|:-------------------------------------------------------------------------------------------------|<br>| isVisible  | <code>Input()</code>  | <code>boolean</code>    | <code>false</code> |  whether the password is visible or hidden</p>
@@ -224,7 +223,7 @@ export class OtherModule {
 &lt;/mat-password-strength&gt;</code></p>
 <p>This will display only the material password strength meter in form of a progress without any input fields
 or similar.</p>
-<h4 id="in-the-following-example-we-integration-a-material-input-container-with-angular-material-extensionspassword-strength-s-component">In the following example, we integration a material input container with <code>@angular-material-extensions/password-strength</code> &#39;s component.</h4>
+<h3 id="in-the-following-example-we-integration-a-material-input-container-with-angular-material-extensionspassword-strength-s-component">In the following example, we integration a material input container with <code>@angular-material-extensions/password-strength</code> &#39;s component.</h3>
 <p>NOTE: In order to repaint the mat-form-field correctly after changing the value of the password&#39;s strength, please consider
 to change the detection strategy for the parent component --&gt; </p>
 <p>```typescript
@@ -260,7 +259,7 @@ export class HomeComponent implements OnInit {}
         &lt;/mat-password-strength&gt;
  &lt;/div&gt;</code></pre></div><p>```</p>
 <p><a href="https://material.angular.io/components/input/overview">learn more about mat-form-field</a></p>
-<h4 id="example-of-how-to-use-the-emitted-strength-of-the-password-in-your-template">Example of how to use the emitted strength of the password in your template</h4>
+<h3 id="example-of-how-to-use-the-emitted-strength-of-the-password-in-your-template">Example of how to use the emitted strength of the password in your template</h3>
 <p>```html</p>
 <div fxLayout="row" fxLayoutGap="10px">
    <div *ngIf="passwordComponent.strength === 100; then done else error">
@@ -277,7 +276,7 @@ export class HomeComponent implements OnInit {}
 </div>
 ```
 
-<h4 id="use-the-toggle-visibility-component">Use the toggle visibility component</h4>
+<h3 id="use-the-toggle-visibility-component">Use the toggle visibility component</h3>
 <ul>
 <li>add the <code>mat-pass-toggle-visibility</code> to your <code>mat-form-field</code></li>
 <li>give it a name to use it in the html file like <code>toggle</code></li>
@@ -297,7 +296,7 @@ export class HomeComponent implements OnInit {}
     {{password.value.length}} / 25
   &lt;/mat-hint&gt;
 &lt;/mat-form-field&gt;</code></p>
-<h4 id="client-side-passwords-validation-using-a-built-in-angular-formcontroller">Client Side password&#39;s validation using a built in angular formController</h4>
+<h3 id="client-side-passwords-validation-using-a-built-in-angular-formcontroller">Client Side password&#39;s validation using a built in angular formController</h3>
 <ol>
 <li>add an input element to your template with an appropriate @angular-material-extensions/password-strength&#39;s component</li>
 <li>hold a reference of the @angular-material-extensions/password-strength&#39;s component by adding <code>passwordComponentWithValidation</code> (or whatever you want) inside the element</li>
@@ -354,7 +353,7 @@ export class HomeComponent implements OnInit {}
 </p>
 
 <hr>
-<h4 id="custom-regex-validation">custom regex validation</h4>
+<h3 id="custom-regex-validation">custom regex validation</h3>
 <p>please consider to use the <code>customValidator</code> input (see below)</p>
 <p>```html
 &lt;mat-slide-toggle #toggle&gt;Show Password Details</mat-slide-toggle></p>
@@ -382,7 +381,25 @@ export class HomeComponent implements OnInit {}
 <p>```</p>
 <p><code>ts
 pattern = new RegExp(/^(?=.*?[äöüÄÖÜß])/);</code></p>
-<h4 id="supporting-custom-messages-and-ngx-translate-for-the-info-component-please-check-the-example-demo-here">Supporting custom messages and ngx-translate for the info component please check the example demo <a href="https://angular-material-extensions.github.io/password-strength/examples/mat-password-strength-info">here</a></h4>
+<h3 id="confirm-the-password-with-built-in-angular-form-controllers---see-the-live-example">Confirm the password with built in angular form controllers - <a href="https://angular-material-extensions.github.io/password-strength">see the live example</a></h3>
+<p align="center">
+  <img alt="@angular-material-extensions/password-strength with confirmation feature" style="text-align: center;"
+   src="https://raw.githubusercontent.com/angular-material-extensions/password-strength/HEAD/assets/v3.8.0/confirm01.png">
+</p>
+
+<p align="center">
+  <img alt="@angular-material-extensions/password-strength with confirmation feature " style="text-align: center;"
+   src="https://raw.githubusercontent.com/angular-material-extensions/password-strength/HEAD/assets/v3.8.0/confirm02.png">
+</p>
+
+
+<h3 id="use-always-the-green-color-for-a-strong-password-just-by-adding-the-green-css-class-to-the-mat-password-strength">Use always the green color for a strong password just by adding the <code>green</code> css class to the <code>mat-password-strength</code></h3>
+<p><code>html
+&lt;mat-password-strength #passwordComponent
+                       class=&quot;green&quot;
+                       [password]=&quot;password.value&quot;&gt;
+&lt;/mat-password-strength&gt;</code></p>
+<h3 id="supporting-custom-messages-and-ngx-translate-for-the-info-component-please-check-the-example-demo-here">Supporting custom messages and ngx-translate for the info component please check the example demo <a href="https://angular-material-extensions.github.io/password-strength/examples/mat-password-strength-info">here</a></h3>
 <p align="center">
   <img alt="@angular-material-extensions/password-strength demonstration" style="text-align: center;"
    src="https://raw.githubusercontent.com/angular-material-extensions/password-strength/HEAD/assets/v3.4.0/support_translations.png">
@@ -430,7 +447,7 @@ or follow the official <a href="https://angular-material-extensions.github.io/pa
 <a name="license"/>
 
 <h2 id="license">License</h2>
-<p>Copyright (c) 2018 <a href="https://github.com/AnthonyNahas">Anthony Nahas</a>. Licensed under the MIT License (MIT)</p>
+<p>Copyright (c) 2019 <a href="https://github.com/AnthonyNahas">Anthony Nahas</a>. Licensed under the MIT License (MIT)</p>
 
 
 
