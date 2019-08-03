@@ -10,7 +10,7 @@ import {AppComponent} from './app.component';
 import {environment} from '../environments/environment';
 import {ServiceWorkerModule} from '@angular/service-worker';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {MatInputModule} from '@angular/material';
+import {MatInputModule} from '@angular/material/input';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {MarkdownModule} from 'ngx-markdown';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
@@ -32,7 +32,7 @@ export function createTranslateLoader(http: HttpClient) {
     // Add .withServerTransition() to support Universal rendering.
     // The application ID can be any identifier which is unique on
     // the page.
-    BrowserModule.withServerTransition({appId: '@angular-material-extensions/password-strength-demo-id'}),
+    BrowserModule.withServerTransition({appId: 'demo'}),
     ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
     MarkdownModule.forRoot({loader: HttpClient}),
     TranslateModule.forRoot({
