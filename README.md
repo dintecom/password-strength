@@ -235,7 +235,7 @@ to change the detection strategy for the parent component -->
 ```typescript
 import {ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {MatSlideToggleChange} from '@angular/material';
+import {MatSlideToggleChange} from '@angular/material/slide-toggle';
 import {MatPasswordStrengthComponent} from '@angular-material-extensions/password-strength';
 
 @Component({
